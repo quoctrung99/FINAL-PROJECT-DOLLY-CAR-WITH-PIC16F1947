@@ -86,7 +86,7 @@ FIXDEPS=fixDeps
 
 # The following macros may be used in the pre and post step lines
 Device=PIC16F1947
-ProjectDir="D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X"
+ProjectDir="E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X"
 ProjectName=__MOBILE__ROBOT__V3
 ConfName=default
 ImagePath="dist\default\${IMAGE_TYPE}\__MOBILE__ROBOT__V3.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}"

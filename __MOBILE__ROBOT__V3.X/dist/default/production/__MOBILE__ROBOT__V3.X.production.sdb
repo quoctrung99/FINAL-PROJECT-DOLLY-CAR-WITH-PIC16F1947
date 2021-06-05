@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 16F1947 ]
 [d frameptr 6 ]
-"34 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/drivers/i2c_simple_master.c
+"34 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/drivers/i2c_simple_master.c
 [e E360 . `uc
 I2C1_STOP 1
 I2C1_RESTART_READ 2
@@ -17,7 +17,7 @@ I2C1_NOERR 0
 I2C1_BUSY 1
 I2C1_FAIL 2
 ]
-"67 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/examples/i2c1_master_example.c
+"67 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/examples/i2c1_master_example.c
 [e E355 . `uc
 I2C1_NOERR 0
 I2C1_BUSY 1
@@ -31,7 +31,7 @@ I2C1_RESTART_WRITE 3
 I2C1_CONTINUE 4
 I2C1_RESET_LINK 5
 ]
-"67 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/examples/i2c2_master_example.c
+"67 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/examples/i2c2_master_example.c
 [e E355 . `uc
 I2C2_NOERR 0
 I2C2_BUSY 1
@@ -45,7 +45,7 @@ I2C2_RESTART_WRITE 3
 I2C2_CONTINUE 4
 I2C2_RESET_LINK 5
 ]
-"146 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/i2c1_master.c
+"146 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/i2c1_master.c
 [e E4505 . `uc
 I2C1_IDLE 0
 I2C1_SEND_ADR_READ 1
@@ -86,7 +86,7 @@ I2C1_DATA_NACK 3
 I2C1_TIMEOUT 4
 I2C1_NULL 5
 ]
-"146 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/i2c2_master.c
+"146 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/i2c2_master.c
 [e E4505 . `uc
 I2C2_IDLE 0
 I2C2_SEND_ADR_READ 1
@@ -127,69 +127,75 @@ I2C2_DATA_NACK 3
 I2C2_TIMEOUT 4
 I2C2_NULL 5
 ]
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
+"4 D:\MPLAB XC8\pic\sources\c99\common\atoi.c
 [v _atoi atoi `(i  1 e 2 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+"4 D:\MPLAB XC8\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+"4 D:\MPLAB XC8\pic\sources\c99\common\flge.c
 [v ___flge __flge `(b  1 e 0 0 ]
 [v i1___flge __flge `(b  1 e 0 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
+"15 D:\MPLAB XC8\pic\sources\c99\common\flneg.c
 [v ___flneg __flneg `(d  1 e 4 0 ]
-"43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+"43 D:\MPLAB XC8\pic\sources\c99\common\fltol.c
 [v ___fltol __fltol `(l  1 e 4 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
+"5 D:\MPLAB XC8\pic\sources\c99\common\isdigit.c
 [v _isdigit isdigit `(i  1 e 2 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
+"5 D:\MPLAB XC8\pic\sources\c99\common\isspace.c
 [v _isspace isspace `(i  1 e 2 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+"5 D:\MPLAB XC8\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"10 D:\MPLAB XC8\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "242
 [v ___flsub __flsub `(d  1 e 4 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+"8 D:\MPLAB XC8\pic\sources\c99\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+"8 D:\MPLAB XC8\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+"5 D:\MPLAB XC8\pic\sources\c99\common\strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+"15 D:\MPLAB XC8\pic\sources\c99\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+"4 D:\MPLAB XC8\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+"10 D:\MPLAB XC8\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
 [v i1___xxtofl __xxtofl `(d  1 e 4 0 ]
-"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\pic\__eeprom.c
+"6 D:\MPLAB XC8\pic\sources\c99\pic\__eeprom.c
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"113 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\main.c
+"115 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\main.c
 [v _T1_ROBOT_ISR T1_ROBOT_ISR `(v  1 e 1 0 ]
-"139
+"148
 [v _KE KE `(v  1 e 1 0 ]
-"167
-[v _distance_sensor_bottom distance_sensor_bottom `(f  1 e 4 0 ]
 "176
+[v _ramp_step_function ramp_step_function `(v  1 e 1 0 ]
+"195
+[v _distance_sensor_bottom distance_sensor_bottom `(f  1 e 4 0 ]
+"204
 [v _distance_sensor_top distance_sensor_top `(f  1 e 4 0 ]
-"190
+"218
 [v _SetUpModeHalf_step SetUpModeHalf_step `(v  1 e 1 0 ]
-"198
+"228
 [v _ManualHandle ManualHandle `(v  1 e 1 0 ]
-"231
+"261
 [v _ManualControl ManualControl `(v  1 e 1 0 ]
-"280
+"322
 [v _AutoCircleHandle AutoCircleHandle `(v  1 e 1 0 ]
-"339
+"372
+[v _AutoCircleControl AutoCircleControl `(v  1 e 1 0 ]
+"386
 [v _AutoLineHandle AutoLineHandle `(v  1 e 1 0 ]
-"390
+"437
 [v _AutoLineControl AutoLineControl `(v  1 e 1 0 ]
-"417
+"464
 [v _TimeLapseHandle TimeLapseHandle `(v  1 e 1 0 ]
-"475
+"522
 [v _TimeLapseControl TimeLapseControl `(v  1 e 1 0 ]
-"520
+"572
 [v _main main `(v  1 e 1 0 ]
-"34 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/drivers/i2c_simple_master.c
+"34 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/drivers/i2c_simple_master.c
 [v _wr1RegCompleteHandler wr1RegCompleteHandler `(E360  1 s 1 wr1RegCompleteHandler ]
 "81
 [v _rd1RegCompleteHandler rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
@@ -199,7 +205,7 @@ I2C2_NULL 5
 [v _wr2RegCompleteHandler wr2RegCompleteHandler `(E360  1 s 1 wr2RegCompleteHandler ]
 "185
 [v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
-"66 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart1.c
+"66 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
 "99
 [v _EUSART1_is_rx_ready EUSART1_is_rx_ready `(a  1 e 1 0 ]
@@ -219,7 +225,7 @@ I2C2_NULL 5
 [v _EUSART1_SetOverrunErrorHandler EUSART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
 "165
 [v _EUSART1_SetErrorHandler EUSART1_SetErrorHandler `(v  1 e 1 0 ]
-"66 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart2.c
+"66 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart2.c
 [v _EUSART2_Initialize EUSART2_Initialize `(v  1 e 1 0 ]
 "94
 [v _EUSART2_is_tx_ready EUSART2_is_tx_ready `(a  1 e 1 0 ]
@@ -237,7 +243,7 @@ I2C2_NULL 5
 [v _EUSART2_SetOverrunErrorHandler EUSART2_SetOverrunErrorHandler `(v  1 e 1 0 ]
 "165
 [v _EUSART2_SetErrorHandler EUSART2_SetErrorHandler `(v  1 e 1 0 ]
-"63 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/examples/i2c1_master_example.c
+"63 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/examples/i2c1_master_example.c
 [v _I2C1_Read1ByteRegister I2C1_Read1ByteRegister `(uc  1 e 1 0 ]
 "142
 [v _rd1RegCompleteHandler@i2c1_master_example$F143 rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
@@ -249,7 +255,7 @@ I2C2_NULL 5
 [v _wr2RegCompleteHandler@i2c1_master_example$F166 wr2RegCompleteHandler `(E360  1 s 1 wr2RegCompleteHandler ]
 "170
 [v _rdBlkRegCompleteHandler@i2c1_master_example$F177 rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
-"63 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/examples/i2c2_master_example.c
+"63 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/examples/i2c2_master_example.c
 [v _I2C2_Read1ByteRegister I2C2_Read1ByteRegister `(uc  1 e 1 0 ]
 "142
 [v _rd1RegCompleteHandler@i2c2_master_example$F254 rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
@@ -261,7 +267,7 @@ I2C2_NULL 5
 [v _wr2RegCompleteHandler@i2c2_master_example$F293 wr2RegCompleteHandler `(E360  1 s 1 wr2RegCompleteHandler ]
 "170
 [v _rdBlkRegCompleteHandler@i2c2_master_example$F307 rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
-"167 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/i2c1_master.c
+"167 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/i2c1_master.c
 [v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
 "176
 [v _I2C1_Open I2C1_Open `(E355  1 e 1 0 ]
@@ -357,7 +363,7 @@ I2C2_NULL 5
 [v _I2C1_MasterSetIrq I2C1_MasterSetIrq `T(v  1 s 1 I2C1_MasterSetIrq ]
 "650
 [v _I2C1_MasterWaitForEvent I2C1_MasterWaitForEvent `T(v  1 s 1 I2C1_MasterWaitForEvent ]
-"167 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/i2c2_master.c
+"167 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/i2c2_master.c
 [v _I2C2_Initialize I2C2_Initialize `(v  1 e 1 0 ]
 "176
 [v _I2C2_Open I2C2_Open `(E355  1 e 1 0 ]
@@ -453,17 +459,17 @@ I2C2_NULL 5
 [v _I2C2_MasterSetIrq I2C2_MasterSetIrq `T(v  1 s 1 I2C2_MasterSetIrq ]
 "650
 [v _I2C2_MasterWaitForEvent I2C2_MasterWaitForEvent `T(v  1 s 1 I2C2_MasterWaitForEvent ]
-"52 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/interrupt_manager.c
+"52 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
-"50 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/mcc.c
+"50 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "63
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "73
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
-"55 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/pin_manager.c
+"55 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"64 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/tmr1.c
+"64 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 "120
 [v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
@@ -484,7 +490,7 @@ I2C2_NULL 5
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-"374 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1947.h
+"374 D:/MPLAB X IDE/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1947.h
 [s S677 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
@@ -633,9 +639,21 @@ I2C2_NULL 5
 [v _LATA LATA `VEuc  1 e 1 @268 ]
 "3241
 [v _LATB LATB `VEuc  1 e 1 @269 ]
+[s S2170 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"3258
+[u S2179 . 1 `S2170 1 . 1 0 ]
+[v _LATBbits LATBbits `VES2179  1 e 1 @269 ]
 "3303
 [v _LATC LATC `VEuc  1 e 1 @270 ]
-[s S2211 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S2237 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -645,8 +663,8 @@ I2C2_NULL 5
 `uc 1 LATC7 1 0 :1:7 
 ]
 "3320
-[u S2220 . 1 `S2211 1 . 1 0 ]
-[v _LATCbits LATCbits `VES2220  1 e 1 @270 ]
+[u S2246 . 1 `S2237 1 . 1 0 ]
+[v _LATCbits LATCbits `VES2246  1 e 1 @270 ]
 "3365
 [v _LATD LATD `VEuc  1 e 1 @271 ]
 "3435
@@ -805,85 +823,90 @@ I2C2_NULL 5
 [v _TX2STAbits TX2STAbits `VES824  1 e 1 @1174 ]
 "9097
 [v _BAUD2CON BAUD2CON `VEuc  1 e 1 @1175 ]
-"62 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\main.c
+"62 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\main.c
 [v _t_left t_left `ui  1 e 2 0 ]
 [v _cntLeft cntLeft `ui  1 e 2 0 ]
 "63
 [v _t_right t_right `ui  1 e 2 0 ]
 [v _cntRight cntRight `ui  1 e 2 0 ]
 "64
+[v _t_dp t_dp `ui  1 e 2 0 ]
+[v _cntDp cntDp `ui  1 e 2 0 ]
+"65
 [v _totalTime totalTime `us  1 e 2 0 ]
 [v _cntTime cntTime `us  1 e 2 0 ]
-"65
+"66
 [v _flag_stop flag_stop `uc  1 e 1 0 ]
-"68
+"69
 [v _shift shift `uc  1 e 1 0 ]
 [v _shift_one shift_one `uc  1 e 1 0 ]
-"69
-[v _distance_raw distance_raw `[2]f  1 e 8 0 ]
 "70
-[v _distance_raw_one distance_raw_one `[2]f  1 e 8 0 ]
+[v _distance_raw distance_raw `[2]f  1 e 8 0 ]
 "71
-[v _DistanceValueTop DistanceValueTop `f  1 e 4 0 ]
+[v _distance_raw_one distance_raw_one `[2]f  1 e 8 0 ]
 "72
+[v _DistanceValueTop DistanceValueTop `f  1 e 4 0 ]
+"73
 [v _DistanceValueBottom DistanceValueBottom `f  1 e 4 0 ]
-"75
-[v _errorOmega errorOmega `f  1 e 4 0 ]
 "76
-[v _errorOmega_sum errorOmega_sum `d  1 e 4 0 ]
+[v _errorOmega errorOmega `f  1 e 4 0 ]
+[v _errorOmega_pre errorOmega_pre `f  1 e 4 0 ]
 "77
+[v _errorOmega_sum errorOmega_sum `d  1 e 4 0 ]
+"78
 [v _PID_Omega PID_Omega `f  1 e 4 0 ]
-"80
-[v _flagManual flagManual `uc  1 e 1 0 ]
 "81
+[v _flagManual flagManual `uc  1 e 1 0 ]
+"82
 [v _velManual velManual `f  1 e 4 0 ]
 [v _velManual_t velManual_t `f  1 e 4 0 ]
-"82
-[v _omegaManual omegaManual `f  1 e 4 0 ]
 "83
+[v _omegaManual omegaManual `f  1 e 4 0 ]
+"84
 [v _cntManual cntManual `i  1 e 2 0 ]
-"86
+"87
 [v _flagALine flagALine `uc  1 e 1 0 ]
 [v _cntALine cntALine `uc  1 e 1 0 ]
-"87
-[v _length_ALine length_ALine `ui  1 e 2 0 ]
 "88
-[v _direct_ALine direct_ALine `i  1 e 2 0 ]
+[v _length_ALine length_ALine `ui  1 e 2 0 ]
 "89
+[v _direct_ALine direct_ALine `i  1 e 2 0 ]
+"90
 [v _velALine velALine `f  1 e 4 0 ]
 [v _omegaALine omegaALine `f  1 e 4 0 ]
 [v _timeALine timeALine `f  1 e 4 0 ]
-"92
+"93
 [v _flagACircle flagACircle `uc  1 e 1 0 ]
 [v _cntACircle cntACircle `uc  1 e 1 0 ]
-"93
-[v _angle_ACircle angle_ACircle `ui  1 e 2 0 ]
 "94
+[v _angle_ACircle angle_ACircle `ui  1 e 2 0 ]
+"95
 [v _velACircle velACircle `f  1 e 4 0 ]
 [v _omegaACircle omegaACircle `f  1 e 4 0 ]
 [v _valRadius_AC valRadius_AC `f  1 e 4 0 ]
 [v _timeACircle timeACircle `f  1 e 4 0 ]
-"97
-[v _cntCamera cntCamera `uc  1 e 1 0 ]
-[v _cnt_frame cnt_frame `uc  1 e 1 0 ]
 "98
-[v _flagCamera flagCamera `uc  1 e 1 0 ]
+[v _cntCamera cntCamera `uc  1 e 1 0 ]
 "99
+[v _flagCamera flagCamera `uc  1 e 1 0 ]
+"100
 [v _valRadius_TL valRadius_TL `f  1 e 4 0 ]
 [v _valVLength_TL valVLength_TL `f  1 e 4 0 ]
 [v _valTime_TL valTime_TL `f  1 e 4 0 ]
-"100
+"101
 [v _sum_frame sum_frame `ui  1 e 2 0 ]
 [v _delay_frame delay_frame `ui  1 e 2 0 ]
-"101
+[v _cnt_frame cnt_frame `ui  1 e 2 0 ]
+"102
 [v _angle_move angle_move `f  1 e 4 0 ]
 [v _omega_TL omega_TL `f  1 e 4 0 ]
 [v _time_move time_move `f  1 e 4 0 ]
-"104
-[v _buffer_sys buffer_sys `[50]uc  1 e 50 0 ]
 "105
-[v _cnt_sys cnt_sys `uc  1 e 1 0 ]
+[v _buffer_sys buffer_sys `[50]uc  1 e 50 0 ]
+[v _in_ramp in_ramp `uc  1 e 1 0 ]
 "106
+[v _cnt_sys cnt_sys `uc  1 e 1 0 ]
+"107
 [v _velocity_sys velocity_sys `f  1 e 4 0 ]
 [v _omega_sys omega_sys `f  1 e 4 0 ]
 [s S751 . 1 `uc 1 perr 1 0 :1:0 
@@ -891,7 +914,7 @@ I2C2_NULL 5
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
-"52 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart1.c
+"52 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart1.c
 [u S756 . 1 `S751 1 . 1 0 `uc 1 status 1 0 ]
 [v _eusart1RxLastError eusart1RxLastError `VES756  1 e 1 0 ]
 "58
@@ -900,7 +923,7 @@ I2C2_NULL 5
 [v _EUSART1_OverrunErrorHandler EUSART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _EUSART1_ErrorHandler EUSART1_ErrorHandler `*.37(v  1 e 2 0 ]
-"52 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart2.c
+"52 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart2.c
 [v _eusart2RxLastError eusart2RxLastError `VES756  1 e 1 0 ]
 "58
 [v _EUSART2_FramingErrorHandler EUSART2_FramingErrorHandler `*.37(v  1 e 2 0 ]
@@ -908,7 +931,7 @@ I2C2_NULL 5
 [v _EUSART2_OverrunErrorHandler EUSART2_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _EUSART2_ErrorHandler EUSART2_ErrorHandler `*.37(v  1 e 2 0 ]
-"146 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/i2c1_master.c
+"146 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/i2c1_master.c
 [v _i2c1_fsmStateTable i2c1_fsmStateTable `DC[16]*.37(E4505  1 e 32 0 ]
 [s S1002 . 29 `[6]*.37(E360 1 callbackTable 12 0 `[6]*.1v 1 callbackPayload 6 12 `us 1 time_out 2 18 `us 1 time_out_value 2 20 `uc 1 address 1 22 `*.1uc 1 data_ptr 1 23 `ui 1 data_length 2 24 `E4505 1 state 1 26 `E355 1 error 1 27 `uc 1 addressNackCheck 1 28 :1:0 
 `uc 1 busy 1 28 :1:1 
@@ -917,44 +940,44 @@ I2C2_NULL 5
 ]
 "165
 [v _I2C1_Status I2C1_Status `S1002  1 e 29 0 ]
-"146 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/i2c2_master.c
+"146 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/i2c2_master.c
 [v _i2c2_fsmStateTable i2c2_fsmStateTable `DC[16]*.37(E4505  1 e 32 0 ]
 "165
 [v _I2C2_Status I2C2_Status `S1002  1 e 29 0 ]
-"57 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/tmr1.c
+"57 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/tmr1.c
 [v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
 "58
 [v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
-"520 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\main.c
+"572 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"564
+"619
 } 0
-"417
+"464
 [v _TimeLapseHandle TimeLapseHandle `(v  1 e 1 0 ]
 {
-"454
-[v TimeLapseHandle@j_2337 j `i  1 a 2 34 ]
-"446
-[v TimeLapseHandle@j_2336 j `i  1 a 2 32 ]
-"438
-[v TimeLapseHandle@j_2335 j `i  1 a 2 30 ]
-"430
+"501
+[v TimeLapseHandle@j_2383 j `i  1 a 2 34 ]
+"493
+[v TimeLapseHandle@j_2382 j `i  1 a 2 32 ]
+"485
+[v TimeLapseHandle@j_2381 j `i  1 a 2 30 ]
+"477
 [v TimeLapseHandle@j j `i  1 a 2 28 ]
-"422
+"469
 [v TimeLapseHandle@i i `i  1 a 2 36 ]
-"419
+"466
 [v TimeLapseHandle@bufferCamera_t bufferCamera_t `[20]uc  1 a 20 0 ]
-"473
+"520
 } 0
-"475
+"522
 [v _TimeLapseControl TimeLapseControl `(v  1 e 1 0 ]
 {
-"482
-[v TimeLapseControl@i i `i  1 a 2 78 ]
-"495
+"529
+[v TimeLapseControl@i i `i  1 a 2 76 ]
+"542
 } 0
-"132 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart1.c
+"132 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
 {
 [v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
@@ -962,12 +985,12 @@ I2C2_NULL 5
 [v EUSART1_Write@txData txData `uc  1 a 1 14 ]
 "139
 } 0
-"190 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\main.c
+"218 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\main.c
 [v _SetUpModeHalf_step SetUpModeHalf_step `(v  1 e 1 0 ]
 {
-"196
+"226
 } 0
-"50 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/mcc.c
+"50 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "61
@@ -977,7 +1000,7 @@ I2C2_NULL 5
 {
 "77
 } 0
-"64 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/tmr1.c
+"64 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 {
 "91
@@ -988,27 +1011,27 @@ I2C2_NULL 5
 [v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 14 ]
 "180
 } 0
-"55 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/pin_manager.c
+"55 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "105
 } 0
-"63 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/mcc.c
+"63 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "71
 } 0
-"167 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/i2c2_master.c
+"167 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/i2c2_master.c
 [v _I2C2_Initialize I2C2_Initialize `(v  1 e 1 0 ]
 {
 "174
 } 0
-"167 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/i2c1_master.c
+"167 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/i2c1_master.c
 [v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
 {
 "174
 } 0
-"66 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart2.c
+"66 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart2.c
 [v _EUSART2_Initialize EUSART2_Initialize `(v  1 e 1 0 ]
 {
 "92
@@ -1031,7 +1054,7 @@ I2C2_NULL 5
 [v EUSART2_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 14 ]
 "167
 } 0
-"66 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart1.c
+"66 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
 {
 "92
@@ -1054,25 +1077,25 @@ I2C2_NULL 5
 [v EUSART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 14 ]
 "167
 } 0
-"198 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\main.c
+"228 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\main.c
 [v _ManualHandle ManualHandle `(v  1 e 1 0 ]
 {
-"218
-[v ManualHandle@j_2313 j `i  1 a 2 22 ]
-"210
+"248
+[v ManualHandle@j_2358 j `i  1 a 2 22 ]
+"240
 [v ManualHandle@j j `i  1 a 2 20 ]
-"203
+"233
 [v ManualHandle@i i `i  1 a 2 24 ]
-"200
+"230
 [v ManualHandle@bufferManual_t bufferManual_t `[20]uc  1 a 20 0 ]
-"229
+"259
 } 0
-"231
+"261
 [v _ManualControl ManualControl `(v  1 e 1 0 ]
 {
-"278
+"320
 } 0
-"132 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart2.c
+"132 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart2.c
 [v _EUSART2_Write EUSART2_Write `(v  1 e 1 0 ]
 {
 [v EUSART2_Write@txData txData `uc  1 a 1 wreg ]
@@ -1080,7 +1103,7 @@ I2C2_NULL 5
 [v EUSART2_Write@txData txData `uc  1 a 1 14 ]
 "139
 } 0
-"99 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart1.c
+"99 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/eusart1.c
 [v _EUSART1_is_rx_ready EUSART1_is_rx_ready `(a  1 e 1 0 ]
 {
 "102
@@ -1090,45 +1113,147 @@ I2C2_NULL 5
 {
 "130
 } 0
-"339 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\main.c
+"386 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\main.c
 [v _AutoLineHandle AutoLineHandle `(v  1 e 1 0 ]
 {
-"377
-[v AutoLineHandle@j_2328 j `i  1 a 2 26 ]
-"368
-[v AutoLineHandle@j_2327 j `i  1 a 2 24 ]
-"360
-[v AutoLineHandle@j_2326 j `i  1 a 2 22 ]
-"352
+"424
+[v AutoLineHandle@j_2375 j `i  1 a 2 26 ]
+"415
+[v AutoLineHandle@j_2374 j `i  1 a 2 24 ]
+"407
+[v AutoLineHandle@j_2373 j `i  1 a 2 22 ]
+"399
 [v AutoLineHandle@j j `i  1 a 2 20 ]
-"344
+"391
 [v AutoLineHandle@i i `i  1 a 2 28 ]
-"341
-[v AutoLineHandle@bufferALine_t bufferALine_t `[20]uc  1 a 20 0 ]
 "388
+[v AutoLineHandle@bufferALine_t bufferALine_t `[20]uc  1 a 20 0 ]
+"435
 } 0
-"390
+"437
 [v _AutoLineControl AutoLineControl `(v  1 e 1 0 ]
 {
-"415
+"462
 } 0
-"139
+"322
+[v _AutoCircleHandle AutoCircleHandle `(v  1 e 1 0 ]
+{
+"359
+[v AutoCircleHandle@j_2367 j `i  1 a 2 26 ]
+"351
+[v AutoCircleHandle@j_2366 j `i  1 a 2 24 ]
+"343
+[v AutoCircleHandle@j_2365 j `i  1 a 2 22 ]
+"335
+[v AutoCircleHandle@j j `i  1 a 2 20 ]
+"327
+[v AutoCircleHandle@i i `i  1 a 2 28 ]
+"324
+[v AutoCircleHandle@bufferACircle_t bufferACircle_t `[20]uc  1 a 20 0 ]
+"370
+} 0
+"5 D:\MPLAB XC8\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.39DCuc  1 a 2 16 ]
+"5
+[v strlen@s s `*.39DCuc  1 p 2 14 ]
+"12
+} 0
+"4 D:\MPLAB XC8\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+{
+"6
+[v atoi@n n `i  1 a 2 33 ]
+[v atoi@neg neg `i  1 a 2 26 ]
+"4
+[v atoi@s s `*.39DCuc  1 p 2 20 ]
+"16
+} 0
+"5 D:\MPLAB XC8\pic\sources\c99\common\isspace.c
+[v _isspace isspace `(i  1 e 2 0 ]
+{
+[v isspace@c c `i  1 p 2 14 ]
+"8
+} 0
+"5 D:\MPLAB XC8\pic\sources\c99\common\isdigit.c
+[v _isdigit isdigit `(i  1 e 2 0 ]
+{
+[v isdigit@c c `i  1 p 2 14 ]
+"8
+} 0
+"15 D:\MPLAB XC8\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 18 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 14 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 16 ]
+"53
+} 0
+"372 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\main.c
+[v _AutoCircleControl AutoCircleControl `(v  1 e 1 0 ]
+{
+"384
+} 0
+"176
+[v _ramp_step_function ramp_step_function `(v  1 e 1 0 ]
+{
+"179
+[v ramp_step_function@i i `i  1 a 2 4 ]
+"178
+[v ramp_step_function@velocity_ramp velocity_ramp `f  1 a 4 6 ]
+[v ramp_step_function@omega_ramp omega_ramp `f  1 a 4 0 ]
+"176
+[v ramp_step_function@velocity velocity `f  1 p 4 24 ]
+[v ramp_step_function@radius radius `f  1 p 4 28 ]
+[v ramp_step_function@total_time total_time `f  1 p 4 32 ]
+"193
+} 0
+"10 D:\MPLAB XC8\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 45 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 44 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 35 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 43 ]
+"44
+} 0
+"148 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\main.c
 [v _KE KE `(v  1 e 1 0 ]
 {
-"141
-[v KE@OmegaRight OmegaRight `f  1 a 4 17 ]
-"140
-[v KE@OmegaLeft OmegaLeft `f  1 a 4 13 ]
-"139
-[v KE@Omega_body Omega_body `f  1 p 4 5 ]
-[v KE@Velocity_body Velocity_body `f  1 p 4 9 ]
-"165
+"150
+[v KE@OmegaRight OmegaRight `f  1 a 4 20 ]
+"149
+[v KE@OmegaLeft OmegaLeft `f  1 a 4 16 ]
+"148
+[v KE@Omega_body Omega_body `f  1 p 4 8 ]
+[v KE@Velocity_body Velocity_body `f  1 p 4 12 ]
+"174
 } 0
-"242 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+"43 D:\MPLAB XC8\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 50 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 49 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 72 ]
+"70
+} 0
+"242 D:\MPLAB XC8\pic\sources\c99\common\sprcadd.c
 [v ___flsub __flsub `(d  1 e 4 0 ]
 {
-[v ___flsub@a a `d  1 p 4 72 ]
-[v ___flsub@b b `d  1 p 4 76 ]
+[v ___flsub@a a `d  1 p 4 0 ]
+[v ___flsub@b b `d  1 p 4 4 ]
 "250
 } 0
 "10
@@ -1147,116 +1272,26 @@ I2C2_NULL 5
 [v ___fladd@a a `d  1 p 4 56 ]
 "237
 } 0
-"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
+"15 D:\MPLAB XC8\pic\sources\c99\common\flneg.c
 [v ___flneg __flneg `(d  1 e 4 0 ]
 {
 [v ___flneg@f1 f1 `d  1 p 4 14 ]
 "20
 } 0
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
-[v ___flge __flge `(b  1 e 0 0 ]
-{
-[v ___flge@ff1 ff1 `d  1 p 4 14 ]
-[v ___flge@ff2 ff2 `d  1 p 4 18 ]
-"19
-} 0
-"280 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\main.c
-[v _AutoCircleHandle AutoCircleHandle `(v  1 e 1 0 ]
-{
-"317
-[v AutoCircleHandle@j_2321 j `i  1 a 2 34 ]
-"309
-[v AutoCircleHandle@j_2320 j `i  1 a 2 32 ]
-"301
-[v AutoCircleHandle@j_2319 j `i  1 a 2 30 ]
-"293
-[v AutoCircleHandle@j j `i  1 a 2 28 ]
-"285
-[v AutoCircleHandle@i i `i  1 a 2 36 ]
-"282
-[v AutoCircleHandle@bufferACircle_t bufferACircle_t `[20]uc  1 a 20 0 ]
-"337
-} 0
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
-[v _strlen strlen `(ui  1 e 2 0 ]
-{
-"7
-[v strlen@a a `*.39DCuc  1 a 2 16 ]
-"5
-[v strlen@s s `*.39DCuc  1 p 2 14 ]
-"12
-} 0
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\atoi.c
-[v _atoi atoi `(i  1 e 2 0 ]
-{
-"6
-[v atoi@n n `i  1 a 2 33 ]
-[v atoi@neg neg `i  1 a 2 26 ]
-"4
-[v atoi@s s `*.39DCuc  1 p 2 20 ]
-"16
-} 0
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
-[v _isspace isspace `(i  1 e 2 0 ]
-{
-[v isspace@c c `i  1 p 2 14 ]
-"8
-} 0
-"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isdigit.c
-[v _isdigit isdigit `(i  1 e 2 0 ]
-{
-[v isdigit@c c `i  1 p 2 14 ]
-"8
-} 0
-"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
-[v ___wmul __wmul `(ui  1 e 2 0 ]
-{
-"17
-[v ___wmul@product product `ui  1 a 2 18 ]
-"15
-[v ___wmul@multiplier multiplier `ui  1 p 2 14 ]
-[v ___wmul@multiplicand multiplicand `ui  1 p 2 16 ]
-"53
-} 0
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
-[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-{
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-"13
-[v ___xxtofl@arg arg `ul  1 a 4 45 ]
-"12
-[v ___xxtofl@exp exp `uc  1 a 1 44 ]
-"10
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-[v ___xxtofl@val val `l  1 p 4 35 ]
-"15
-[v ___xxtofl@sign sign `uc  1 a 1 43 ]
-"44
-} 0
-"43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
-[v ___fltol __fltol `(l  1 e 4 0 ]
-{
-"45
-[v ___fltol@exp1 exp1 `uc  1 a 1 50 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 49 ]
-"43
-[v ___fltol@f1 f1 `d  1 p 4 72 ]
-"70
-} 0
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+"8 D:\MPLAB XC8\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S2665 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S2713 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S2670 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
-[u S2673 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2665 1 fAsBytes 4 0 `S2670 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S2673  1 a 4 20 ]
+[s S2718 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S2721 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2713 1 fAsBytes 4 0 `S2718 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S2721  1 a 4 20 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 15 ]
-[s S2742 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S2790 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S2745 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S2742 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S2745  1 a 2 24 ]
+[u S2793 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S2790 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S2793  1 a 2 24 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 19 ]
 "11
@@ -1268,7 +1303,7 @@ I2C2_NULL 5
 [v ___flmul@a a `d  1 p 4 4 ]
 "205
 } 0
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+"4 D:\MPLAB XC8\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
 {
 [v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
@@ -1282,14 +1317,21 @@ I2C2_NULL 5
 [v __Umul8_16@multiplier multiplier `uc  1 a 1 22 ]
 "60
 } 0
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+"4 D:\MPLAB XC8\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 26 ]
+[v ___flge@ff2 ff2 `d  1 p 4 30 ]
+"19
+} 0
+"4 D:\MPLAB XC8\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 {
 [v ___fleq@ff1 ff1 `d  1 p 4 0 ]
 [v ___fleq@ff2 ff2 `d  1 p 4 4 ]
 "12
 } 0
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+"8 D:\MPLAB XC8\pic\sources\c99\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
 {
 "21
@@ -1309,12 +1351,12 @@ I2C2_NULL 5
 [v ___fldiv@b b `d  1 p 4 30 ]
 "185
 } 0
-"52 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/interrupt_manager.c
+"52 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 {
 "70
 } 0
-"157 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/tmr1.c
+"157 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/tmr1.c
 [v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
 {
 "167
@@ -1330,17 +1372,17 @@ I2C2_NULL 5
 {
 "176
 } 0
-"113 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\main.c
+"115 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\main.c
 [v _T1_ROBOT_ISR T1_ROBOT_ISR `(v  1 e 1 0 ]
 {
-"137
+"146
 } 0
-"182 D:\Vi_dieu_khien\MPLAX\___DO__AN___CDT\__MOBILE__ROBOT__V3.X\mcc_generated_files/tmr1.c
+"182 E:\Nam_4\HK2\DATN\FINAL-PROJECT-DOLLY-CAR-WITH-PIC16F1947\__MOBILE__ROBOT__V3.X\mcc_generated_files/tmr1.c
 [v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
 "185
 } 0
-"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+"10 D:\MPLAB XC8\pic\sources\c99\common\xxtofl.c
 [v i1___xxtofl __xxtofl `(d  1 e 4 0 ]
 {
 [v i1___xxtofl@sign sign `uc  1 a 1 wreg ]
@@ -1355,7 +1397,7 @@ I2C2_NULL 5
 [v i1___xxtofl@sign sign `uc  1 a 1 8 ]
 "44
 } 0
-"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+"4 D:\MPLAB XC8\pic\sources\c99\common\flge.c
 [v i1___flge __flge `(b  1 e 0 0 ]
 {
 [v i1___flge@ff1 ff1 `d  1 p 4 0 ]

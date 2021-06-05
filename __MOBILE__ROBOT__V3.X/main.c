@@ -34,25 +34,25 @@
 //#define PID_SOME_OVER
 #define PID_NO_OVER
 #ifdef PID_CLASSIC
-    #define Kp_Omega  0.13     // 2 5 10
-    #define Ki_Omega  0.093333333     // 0.01 0.1 0.05
-    #define Kd_Omega  1.125
+    #define Kp_Omega  0.09
+    #define Ki_Omega  0.025
+    #define Kd_Omega  0.078
 #endif
 
 #ifdef PID_SOME_OVER
-    #define Kp_Omega  0.699993     // 2 5 10
-    #define Ki_Omega  0.155554     // 0.01 0.1 0.05
-    #define Kd_Omega  2.0999979
+    #define Kp_Omega  0.05     // 2 5 10
+    #define Ki_Omega  0.014     // 0.01 0.1 0.05
+    #define Kd_Omega  0.117
 #endif
 
 #ifdef PID_NO_OVER
-    #define Kp_Omega  0.34     // 2 5 10
-    #define Ki_Omega  0.075     // 0.01 0.1 0.05
-    #define Kd_Omega  1
+    #define Kp_Omega  0.142
+    #define Ki_Omega  0
+    #define Kd_Omega  0
 #endif
 
-#define PID_OMEGA_MAX   30
-#define PID_OMEGA_MIN  -30
+#define PID_OMEGA_MAX   8
+#define PID_OMEGA_MIN  -8
 
 #define PI              3.14159
 #define ROBOT_RUN       1
@@ -61,6 +61,7 @@
 // initialize interrupt 
 unsigned int t_left  = T_MAX, cntLeft  = 0;      // delay for LEFT pulse
 unsigned int t_right = T_MAX, cntRight = 0;     // delay for Right pulse
+unsigned int t_dp = T_MAX, cntDp = 0;          // delay for DP pulse
 uint16_t totalTime = totalTimeMin, cntTime = 0;
 unsigned char flag_stop = ROBOT_STOP;
 
@@ -94,14 +95,14 @@ unsigned int  angle_ACircle = 0;
 float velACircle = 0, omegaACircle = 0, valRadius_AC = 0, timeACircle = 0;
 
 // initialize camera control
-unsigned char   cntCamera = 0, cnt_frame = 0;
+unsigned char   cntCamera = 0; 
 unsigned char flagCamera = 0;
 float valRadius_TL = 0, valVLength_TL = 0, valTime_TL = 0;
-unsigned int sum_frame = 0, delay_frame = 0;
-float angle_move = 0, omega_TL = 0, velocity_TL = 100, time_move = 0;
+unsigned int sum_frame = 0, delay_frame = 0, cnt_frame = 0;
+float angle_move = 0, omega_TL = 0, velocity_TL = 30, time_move = 0;
 
 //initialize system
-char buffer_sys[50];
+char buffer_sys[50], in_ramp = 1;
 unsigned char cnt_sys = 0;
 float velocity_sys = 0, omega_sys = 0;
 
@@ -110,22 +111,30 @@ void putch(char value)
    while(!EUSART2_is_tx_ready());
    EUSART2_Write(value);
 }
+
 void T1_ROBOT_ISR()
 {
     if (t_left != T_MAX){
-        if (cntLeft < (float)(t_left/4)) cntLeft++;   
+        if (cntLeft < (float)(t_left/2)) cntLeft++;   
         else{
             hSTEP_LEFT = !hSTEP_LEFT;
             cntLeft = 0;
         }
     }
     if (t_right != T_MAX){
-        if (cntRight < (float)(t_right/4)) cntRight++;
+        if (cntRight < (float)(t_right/2)) cntRight++;
         else {
             hSTEP_RIGHT = !hSTEP_RIGHT;
             cntRight = 0;
         } 
-    }    
+    }
+    if (t_dp != T_MAX){
+        if (cntDp < (float)(t_dp/8)) cntDp++;
+        else {
+            hSTEP_DP = !hSTEP_DP;
+            cntDp = 0;
+        } 
+    }     
     if(cntTime < totalTime)   cntTime = cntTime + 1;
     else{
         flag_stop = ROBOT_STOP;
@@ -159,9 +168,28 @@ void KE(float Omega_body, float Velocity_body){
     else hDIR_LEFT = 0;
     
     if (OmegaLeft == 0)     t_left  = T_MAX;   // Banh xe trai ngung quay
-    else                    t_left  = (unsigned int)(31.416/OmegaLeft);
+    else                    t_left  = (unsigned int)(31.416/OmegaLeft)/2;
     if (OmegaRight == 0)    t_right = T_MAX;   // Banh xe phai ngung quay
-    else                    t_right = (unsigned int)((31.416+2)/OmegaRight);
+    else                    t_right = (unsigned int)((31.416+2)/OmegaRight)/2;
+}
+
+void ramp_step_function(float velocity, float radius, float total_time)
+{
+    float omega_ramp = 0, velocity_ramp = velocity_sys;
+    for(int i = 0; i < (total_time*0.2); i++) {
+        __delay_ms(1);
+        if((velocity_sys == 0) && (velocity != 0)) {
+            if(velocity_ramp != velocity) velocity_ramp = velocity_ramp + (0.05*velocity);
+        }
+        else if((velocity_sys != 0) && (velocity == 0)) {
+            if(velocity_ramp != 0) velocity_ramp -= (0.05*velocity_sys);
+        }
+        if(radius != 0) {
+            omega_ramp = velocity_ramp/radius;
+        }
+        KE(omega_ramp,velocity_ramp);
+    }
+    in_ramp = 0;
 }
 
 float distance_sensor_bottom(){    
@@ -193,6 +221,8 @@ void SetUpModeHalf_step()
     hMS2_LEFT  = LOW;    
     hMS1_RIGHT = HIGH;
     hMS2_RIGHT = LOW;
+    hMS1_DP    = LOW;
+    hMS2_DP    = HIGH;
 }
 
 void ManualHandle()
@@ -230,25 +260,23 @@ void ManualHandle()
 
 void ManualControl()
 {
-    if(buffer_sys[0] == 'T'){
+    if(buffer_sys[0] == 'T'){ // Robot go forward
         cnt_sys = 0;
         totalTime  = 100000;
         velManual_t = velManual;
         if(velManual < 0) velManual = -velManual;
+        if(in_ramp) ramp_step_function(velManual,0,100);
         velocity_sys = velManual;
-//        printf("velManual: %f\n",velManual);
-//        printf("velocity_sys %f \n", velocity_sys);
     }           
-    else if(buffer_sys[0] == 'B'){
+    else if(buffer_sys[0] == 'B'){ // Robot go backward
         cnt_sys = 0;
         totalTime  = 100000;
         velManual_t = velManual;
         if(velManual > 0) velManual = -velManual;
-        velocity_sys = velManual;        
-//        printf("velManual: %f\n",velManual);
-//        printf("velocity_sys %f \n", velocity_sys);
+        if(in_ramp) ramp_step_function(velManual,0,100);
+        velocity_sys = velManual;
     } 
-    else if(buffer_sys[0] == 'L'){
+    else if(buffer_sys[0] == 'L'){ // Robot turn left
         cnt_sys = 0;
         totalTime    = 100000;
         if(velManual != 0) velManual_t  = velManual;
@@ -257,7 +285,7 @@ void ManualControl()
         velocity_sys = velManual;
         omega_sys    = omegaManual;
     }
-    else if(buffer_sys[0] == 'R'){
+    else if(buffer_sys[0] == 'R'){ // Robot turn right
         cnt_sys      = 0;
         totalTime    = 100000;
         if(velManual != 0) velManual_t  = velManual;
@@ -266,14 +294,28 @@ void ManualControl()
         velocity_sys = velManual;
         omega_sys    = omegaManual;
     }
-    else if(buffer_sys[0] == 'N'){
+    else if(buffer_sys[0] == 'D'){ // Camera go up
+        cnt_sys = 0;
+        if(t_dp == T_MAX)  t_dp = 32;
+        if(hDIR_DP == LOW) hDIR_DP = HIGH;
+    }
+    else if(buffer_sys[0] == 'U'){ // Camera go down
+        cnt_sys = 0;
+        if(t_dp == T_MAX)  t_dp = 32;
+        if(hDIR_DP == HIGH) hDIR_DP = LOW;
+    }
+    else if(buffer_sys[0] == 'N'){ // Robot stop
         cnt_sys      = 0;
-        cntTime      = 0;
-        if(velManual_t != velManual) velManual = velManual_t; 
+        if(velManual_t != velManual) velManual = velManual_t;
+        if(in_ramp == 0) ramp_step_function(0,0,100);
         omegaManual  = 0;
+        cntTime      = 0;
         totalTime    = totalTimeMin;
         velocity_sys = 0;
         omega_sys    = 0;
+        in_ramp      = 1;
+        
+        t_dp = T_MAX; //Motor of control camera direction is off
     }    
 }
 
@@ -324,12 +366,17 @@ void AutoCircleHandle()
                 cntACircle = cntACircle + 1;                
             }
         }
-    }
+    }    
+}
+
+void AutoCircleControl()
+{
     if(flagACircle == 2){
         timeACircle   = (PI*valRadius_AC*angle_ACircle*100)/(18*velACircle); //ms
         omegaACircle  = velACircle/valRadius_AC;
         if(totalTime != timeACircle) totalTime = timeACircle; 
         cntTime       = 0;
+        ramp_step_function(velACircle,valRadius_AC,timeACircle);
         velocity_sys  = velACircle;
         omega_sys     = omegaACircle;
         flagACircle   = 0;
@@ -463,10 +510,10 @@ void TimeLapseHandle()
         }
     }
     if(flagCamera == 2){
-        sum_frame   = valVLength_TL*1800;
+        sum_frame   = valVLength_TL*30; //fps = 30
         angle_move  = (float)360/sum_frame;
-        delay_frame = (angle_move*valTime_TL*1000)/6;
-        time_move   = (PI*valRadius_TL*angle_move*100)/(18*velocity_TL);
+        delay_frame = (angle_move*valTime_TL*1000)/6; // angle*valTime*1000*60/360 (unit: milisecond)
+        time_move   = (PI*valRadius_TL*angle_move*100)/(18*velocity_TL); //PI*R*angle*1000/180*velocity  (unit: milisecond)
         omega_TL    = velocity_TL/valRadius_TL;
         flagCamera  = 3;
     }
@@ -497,13 +544,18 @@ void TimeLapseControl()
 void PID()
 {
     DistanceValueTop    = distance_sensor_top();     
-    DistanceValueBottom = distance_sensor_bottom();  
-    errorOmega = (DistanceValueTop - DistanceValueBottom);                     
+    DistanceValueBottom = distance_sensor_bottom();
+//    printf("DistanceValueTop %f \n", DistanceValueTop);
+//    printf("DistanceValueBottom %f \n", DistanceValueBottom);
+    errorOmega = (-DistanceValueTop + DistanceValueBottom);
+    printf("%f \n", errorOmega);
     if (errorOmega_sum < 1000) errorOmega_sum += errorOmega;
-    PID_Omega = Kp_Omega*errorOmega + Ki_Omega*errorOmega_sum + Kd_Omega*(errorOmega - errorOmega_pre);                 
+    PID_Omega = Kp_Omega*errorOmega + Ki_Omega*errorOmega_sum + Kd_Omega*(errorOmega - errorOmega_pre);
+    errorOmega_pre = errorOmega;                 
     if(PID_Omega > PID_OMEGA_MAX) PID_Omega = PID_OMEGA_MAX;
     if(PID_Omega < PID_OMEGA_MIN) PID_Omega = PID_OMEGA_MIN;
-    //KE(PID_Omega,0);
+    totalTime    = 100000;
+    cntTime = 0;
     omega_sys    = PID_Omega;
     velocity_sys = 0;
 }
@@ -538,27 +590,30 @@ void main(void)
 
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
-    __delay_ms(300);
     LATCbits.LATC2 = HIGH;
-    SetUpModeHalf_step();  
-    while (1){   
+    SetUpModeHalf_step();
+    while (1){
+//        EUSART1_Write('1');
+//        __delay_ms(3000);
         if(EUSART1_is_rx_ready()){          
            buffer_sys[cnt_sys] = EUSART1_Read();
            EUSART2_Write(buffer_sys[cnt_sys]);
            cnt_sys = cnt_sys + 1;
         }
-        if (buffer_sys[cnt_sys - 1] == '#') {
+        if(buffer_sys[cnt_sys - 1] == '#') {
             ManualHandle();
             AutoCircleHandle();
             AutoLineHandle();
             TimeLapseHandle();
             cnt_sys = 0;
         }
-        ManualControl();        
+        ManualControl();
+        AutoCircleControl();
         AutoLineControl();
         TimeLapseControl();
+          //PID();
         KE(omega_sys, velocity_sys);
-        //printf("omega_sys %f \n", omega_sys);
-        //printf("velocity_sys %f \n", velocity_sys);
+////        printf("omega_sys %f \n", omega_sys);
+////        printf("velocity_sys %f \n", velocity_sys);
     }
 }
